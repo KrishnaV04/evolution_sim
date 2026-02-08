@@ -1,0 +1,42 @@
+.param-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.param-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.param-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.corner-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+}
+
+.corner-btn {
+  font-size: 0.75rem;
+  padding: 0.35em 0.5em;
+  text-transform: capitalize;
+}
+
+.corner-btn.active {
+  background: var(--bg-tertiary);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.param-range {
+  width: 100%;
+  accent-color: var(--accent);
+}

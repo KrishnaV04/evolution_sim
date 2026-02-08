@@ -1,0 +1,9 @@
+.simulation-canvas {
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 1;
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  cursor: crosshair;
+  image-rendering: pixelated;
+}

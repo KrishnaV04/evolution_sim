@@ -1,0 +1,49 @@
+.explanation-panel {
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--bg-secondary);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.explanation-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.explanation-title {
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: var(--accent);
+  transition: color 0.2s;
+}
+
+.explanation-title:hover {
+  color: var(--accent-hover);
+}
+
+.explanation-content {
+  padding: 1rem 1.25rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.explanation-section {
+  margin-bottom: 1.5rem;
+}
+
+.explanation-section h3 {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.explanation-section p {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}

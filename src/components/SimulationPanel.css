@@ -1,0 +1,47 @@
+.simulation-panel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sim-status-bar {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.sim-stat {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.sim-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.sim-death-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+}
+
+.sim-death-overlay p {
+  color: var(--danger);
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 1rem;
+}
