@@ -2,16 +2,16 @@ import { type SimulationConfig, Corner, Direction } from './simulation';
 
 export const DEFAULT_CONFIG: SimulationConfig = {
   startingDna: {
-    [Direction.Up]: 25,
-    [Direction.Down]: 25,
-    [Direction.Left]: 25,
-    [Direction.Right]: 25,
+    [Direction.Up]: 20,
+    [Direction.Down]: 30,
+    [Direction.Left]: 20,
+    [Direction.Right]: 30,
   },
   startingCorner: Corner.TopLeft,
-  mutationPercentage: 0.1,
+  mutationPercentage: 4,
   numberOfBips: 50,
-  dayLength: 100,
-  destinationGrid: 8,
+  dayLength: 450,
+  destinationGrid: 4,
 };
 
 export const SANDBOX_SIZE = 500;

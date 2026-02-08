@@ -64,12 +64,12 @@ The simulation page has three panels:
 
 | Parameter | Default | Range | Description |
 |-----------|---------|-------|-------------|
-| Starting DNA | 25% each | 0–100% per direction, must sum to 100% | Initial movement probability distribution |
+| Starting DNA | R:30% D:30% U:20% L:20% | 0–100% per direction, must sum to 100% | Initial movement probability distribution |
 | Starting Corner | Top Left | 4 corners | Where Bips spawn each day |
-| Mutation Rate | 0.1% | 0–10% | Per-segment mutation probability during cloning |
+| Mutation Rate | 4% | 0–10% | Per-segment mutation probability during cloning |
 | Number of Bips | 50 | 1–100 | Population size after reproduction |
-| Day Length | 100 | 100–1000 | Steps per day |
-| Destination Zone | Bottom Right | Any of 9 grid cells | Survival zone |
+| Day Length | 450 | 100–1000 | Steps per day |
+| Destination Zone | Center | Any of 9 grid cells | Survival zone |
 
 Parameters are locked while the simulation is running. Press Reset to modify them.
 
