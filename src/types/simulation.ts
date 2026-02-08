@@ -1,22 +1,25 @@
-export enum Direction {
-  Up = 'up',
-  Down = 'down',
-  Left = 'left',
-  Right = 'right',
-}
+export const Direction = {
+  Up: 'up',
+  Down: 'down',
+  Left: 'left',
+  Right: 'right',
+} as const;
+export type Direction = (typeof Direction)[keyof typeof Direction];
 
-export enum SimulationStatus {
-  Idle = 'idle',
-  Running = 'running',
-  Paused = 'paused',
-}
+export const SimulationStatus = {
+  Idle: 'idle',
+  Running: 'running',
+  Paused: 'paused',
+} as const;
+export type SimulationStatus = (typeof SimulationStatus)[keyof typeof SimulationStatus];
 
-export enum Corner {
-  TopLeft = 'top-left',
-  TopRight = 'top-right',
-  BottomLeft = 'bottom-left',
-  BottomRight = 'bottom-right',
-}
+export const Corner = {
+  TopLeft: 'top-left',
+  TopRight: 'top-right',
+  BottomLeft: 'bottom-left',
+  BottomRight: 'bottom-right',
+} as const;
+export type Corner = (typeof Corner)[keyof typeof Corner];
 
 export type GridPosition = 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
 
