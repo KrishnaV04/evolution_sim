@@ -18,7 +18,7 @@ export function useCanvasRenderer(
     if (!ctx) return;
 
     // Clear
-    ctx.fillStyle = '#1e2a4a';
+    ctx.fillStyle = '#2a2a2a';
     ctx.fillRect(0, 0, SANDBOX_SIZE, SANDBOX_SIZE);
 
     // Draw grid lines

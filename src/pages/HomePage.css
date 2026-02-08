@@ -13,16 +13,20 @@
 
 .home-title {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, var(--accent), var(--info));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
 }
 
-.home-subtitle {
-  font-size: 1.2rem;
-  color: var(--text-secondary);
+.home-beta {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.15em 0.6em;
   margin-bottom: 2rem;
 }
 
@@ -42,6 +46,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .feature {
@@ -54,7 +59,7 @@
 .feature h3 {
   font-size: 0.95rem;
   margin-bottom: 0.5rem;
-  color: var(--accent);
+  color: var(--text-primary);
 }
 
 .feature p {
@@ -63,19 +68,29 @@
   line-height: 1.5;
 }
 
+.home-beta-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  font-style: italic;
+  border-left: 3px solid var(--border);
+  padding-left: 1rem;
+}
+
 .start-button {
   font-size: 1.1rem;
   padding: 0.8em 2.5em;
-  background: var(--accent);
-  border: none;
-  color: white;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--accent);
+  color: var(--text-primary);
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.2s ease;
 }
 
 .start-button:hover {
-  background: var(--accent-hover);
+  background: var(--accent);
+  color: var(--bg-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 4px 20px rgba(100, 100, 100, 0.2);
 }

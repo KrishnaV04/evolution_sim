@@ -1,0 +1,25 @@
+.parameters-panel {
+  height: 100vh;
+  overflow-y: auto;
+  background: var(--bg-secondary);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+.parameters-header {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.parameters-header h3 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.parameters-content {
+  padding: 1rem;
+  flex: 1;
+  overflow-y: auto;
+}

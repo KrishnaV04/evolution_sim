@@ -3,6 +3,8 @@
   align-items: center;
   gap: 1rem;
   padding: 0.75rem 0;
+  width: 100%;
+  max-width: 500px;
 }
 
 .controls-buttons {
@@ -11,36 +13,39 @@
 }
 
 .btn-start {
-  background: var(--success);
+  background: var(--bg-tertiary);
   border-color: var(--success);
-  color: white;
+  color: var(--success);
   font-weight: 600;
 }
 
 .btn-start:hover {
-  background: #45a049;
+  background: var(--success);
+  color: var(--bg-primary);
 }
 
 .btn-pause {
-  background: var(--warning);
+  background: var(--bg-tertiary);
   border-color: var(--warning);
-  color: white;
+  color: var(--warning);
   font-weight: 600;
 }
 
 .btn-pause:hover {
-  background: #e68a00;
+  background: var(--warning);
+  color: var(--bg-primary);
 }
 
 .btn-reset {
-  background: var(--danger);
+  background: var(--bg-tertiary);
   border-color: var(--danger);
-  color: white;
+  color: var(--danger);
   font-weight: 600;
 }
 
 .btn-reset:hover {
-  background: #d32f2f;
+  background: var(--danger);
+  color: var(--bg-primary);
 }
 
 .speed-control {
@@ -59,5 +64,5 @@
 
 .speed-control input[type="range"] {
   width: 100px;
-  accent-color: var(--accent);
+  accent-color: var(--text-secondary);
 }

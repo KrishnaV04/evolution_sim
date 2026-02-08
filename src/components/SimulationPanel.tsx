@@ -1,6 +1,7 @@
 import { useSimulationContext } from '../context/SimulationContext';
 import SimulationCanvas from './SimulationCanvas';
 import Controls from './Controls';
+import BipInfoPanel from './BipInfoPanel';
 import './SimulationPanel.css';
 
 function SimulationPanel() {
@@ -26,6 +27,8 @@ function SimulationPanel() {
       </div>
 
       <Controls />
+
+      <BipInfoPanel />
     </div>
   );
 }

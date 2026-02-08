@@ -1,7 +1,7 @@
 import { SimulationProvider } from '../context/SimulationContext';
 import ExplanationPanel from '../components/ExplanationPanel';
 import SimulationPanel from '../components/SimulationPanel';
-import BipInfoPanel from '../components/BipInfoPanel';
+import ParametersPanel from '../components/ParametersPanel';
 import './SimulationPage.css';
 
 function SimulationPage() {
@@ -10,7 +10,7 @@ function SimulationPage() {
       <div className="simulation-page">
         <ExplanationPanel />
         <SimulationPanel />
-        <BipInfoPanel />
+        <ParametersPanel />
       </div>
     </SimulationProvider>
   );

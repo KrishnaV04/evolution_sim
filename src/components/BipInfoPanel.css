@@ -1,48 +1,51 @@
 .bip-info-panel {
-  height: 100vh;
-  overflow-y: auto;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 0.75rem;
   background: var(--bg-secondary);
-  border-left: 1px solid var(--border);
-  display: flex;
-  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 6px;
 }
 
 .bip-info-empty {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
 }
 
 .bip-info-empty p {
   font-size: 0.8rem;
   color: var(--text-muted);
   text-align: center;
-  line-height: 1.5;
 }
 
 .bip-info-header {
-  padding: 1rem 0.75rem;
+  padding: 0.5rem 1rem;
   border-bottom: 1px solid var(--border);
 }
 
 .bip-info-header h3 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .bip-info-content {
-  padding: 0.75rem;
+  padding: 0.75rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.bip-details-col {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.35rem;
+  min-width: 100px;
 }
 
 .bip-detail {
   display: flex;
-  justify-content: space-between;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -57,24 +60,27 @@
   font-size: 0.75rem;
   color: var(--text-primary);
   font-family: monospace;
-  word-break: break-all;
+}
+
+.bip-dna-col {
+  flex: 1;
+  min-width: 180px;
 }
 
 .bip-dna-section {
-  margin-top: 0.5rem;
+  margin-bottom: 0.35rem;
 }
 
 .bip-dna-breakdown {
   display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  margin-top: 0.25rem;
+  gap: 0.75rem;
+  flex-wrap: wrap;
 }
 
 .dna-stat {
   display: flex;
   align-items: center;
-  gap: 0.35rem;
+  gap: 0.25rem;
   font-size: 0.72rem;
 }
 
@@ -87,7 +93,6 @@
 
 .dna-stat-label {
   color: var(--text-secondary);
-  flex: 1;
 }
 
 .dna-stat-value {
@@ -97,10 +102,10 @@
 }
 
 .tag-along-btn {
-  margin-top: 0.75rem;
-  width: 100%;
-  font-size: 0.8rem;
-  padding: 0.5em;
+  align-self: center;
+  font-size: 0.75rem;
+  padding: 0.4em 0.8em;
+  white-space: nowrap;
 }
 
 .tag-along-btn.active {

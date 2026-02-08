@@ -32,11 +32,11 @@
 
 .corner-btn.active {
   background: var(--bg-tertiary);
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: var(--text-primary);
+  color: var(--text-primary);
 }
 
 .param-range {
   width: 100%;
-  accent-color: var(--accent);
+  accent-color: var(--text-secondary);
 }

@@ -8,7 +8,7 @@ function HomePage() {
     <div className="home-page">
       <div className="home-content">
         <h1 className="home-title">Evolution Simulator</h1>
-        <p className="home-subtitle">Watch natural selection in action</p>
+        <span className="home-beta">Beta</span>
 
         <div className="home-description">
           <p>
@@ -35,6 +35,12 @@ function HomePage() {
                 the destination.</p>
             </div>
           </div>
+          <p className="home-beta-note">
+            This is the beta version of the Evolution Simulator. Currently Bips use a
+            simple 4-direction DNA strand. Future versions will introduce more complex
+            DNA structures with multi-gene interactions, environmental factors, and
+            richer behavioral patterns.
+          </p>
         </div>
 
         <button className="start-button" onClick={() => navigate('/simulation')}>

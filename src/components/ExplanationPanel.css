@@ -15,7 +15,7 @@
 .explanation-title {
   font-size: 1.1rem;
   cursor: pointer;
-  color: var(--accent);
+  color: var(--text-primary);
   transition: color 0.2s;
 }
 
@@ -30,20 +30,20 @@
 }
 
 .explanation-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .explanation-section h3 {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: var(--text-primary);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .explanation-section p {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }

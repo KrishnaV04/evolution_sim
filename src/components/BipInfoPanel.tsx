@@ -31,39 +31,39 @@ function BipInfoPanel() {
       </div>
 
       <div className="bip-info-content">
-        <div className="bip-detail">
-          <span className="bip-detail-label">ID</span>
-          <span className="bip-detail-value">{selectedBip.id}</span>
-        </div>
-
-        <div className="bip-detail">
-          <span className="bip-detail-label">Gen</span>
-          <span className="bip-detail-value">{selectedBip.generation}</span>
-        </div>
-
-        {selectedBip.parentId && (
+        <div className="bip-details-col">
           <div className="bip-detail">
-            <span className="bip-detail-label">Parent</span>
-            <span className="bip-detail-value">{selectedBip.parentId}</span>
+            <span className="bip-detail-label">ID</span>
+            <span className="bip-detail-value">{selectedBip.id}</span>
           </div>
-        )}
-
-        <div className="bip-dna-section">
-          <span className="bip-detail-label">DNA</span>
-          <DnaBar value={probs} onChange={() => {}} readonly />
+          <div className="bip-detail">
+            <span className="bip-detail-label">Gen</span>
+            <span className="bip-detail-value">{selectedBip.generation}</span>
+          </div>
+          {selectedBip.parentId && (
+            <div className="bip-detail">
+              <span className="bip-detail-label">Parent</span>
+              <span className="bip-detail-value">{selectedBip.parentId}</span>
+            </div>
+          )}
         </div>
 
-        <div className="bip-dna-breakdown">
-          {([Direction.Up, Direction.Down, Direction.Left, Direction.Right] as Direction[]).map(dir => (
-            <div key={dir} className="dna-stat">
-              <span
-                className="dna-stat-dot"
-                style={{ backgroundColor: DIRECTION_COLORS[dir] }}
-              />
-              <span className="dna-stat-label">{DIRECTION_LABELS[dir]}</span>
-              <span className="dna-stat-value">{probs[dir]}%</span>
-            </div>
-          ))}
+        <div className="bip-dna-col">
+          <div className="bip-dna-section">
+            <DnaBar value={probs} onChange={() => {}} readonly />
+          </div>
+          <div className="bip-dna-breakdown">
+            {([Direction.Up, Direction.Down, Direction.Left, Direction.Right] as Direction[]).map(dir => (
+              <div key={dir} className="dna-stat">
+                <span
+                  className="dna-stat-dot"
+                  style={{ backgroundColor: DIRECTION_COLORS[dir] }}
+                />
+                <span className="dna-stat-label">{DIRECTION_LABELS[dir]}</span>
+                <span className="dna-stat-value">{probs[dir]}%</span>
+              </div>
+            ))}
+          </div>
         </div>
 
         <button
