@@ -2,15 +2,15 @@ import { type SimulationConfig, Corner, Direction } from './simulation';
 
 export const DEFAULT_CONFIG: SimulationConfig = {
   startingDna: {
-    [Direction.Up]: 20,
-    [Direction.Down]: 30,
-    [Direction.Left]: 20,
-    [Direction.Right]: 30,
+    [Direction.Up]: 25,
+    [Direction.Down]: 25,
+    [Direction.Left]: 25,
+    [Direction.Right]: 25,
   },
   startingCorner: Corner.TopLeft,
-  mutationPercentage: 4,
-  numberOfBips: 50,
-  dayLength: 450,
+  mutationPercentage: 1,
+  numberOfBips: 100,
+  dayLength: 1000,
   destinationGrid: 4,
 };
 

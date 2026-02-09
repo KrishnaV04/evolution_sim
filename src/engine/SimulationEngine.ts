@@ -1,7 +1,7 @@
 import { type SimulationConfig, type BipData, type Position, Corner } from '../types/simulation';
 import { SANDBOX_SIZE, CELL_SIZE } from '../types/constants';
 import { Bip } from './Bip';
-import { generateDna } from './dna';
+import { generateDna, mutateDna } from './dna';
 
 export class SimulationEngine {
   private bips: Bip[] = [];
@@ -22,7 +22,8 @@ export class SimulationEngine {
 
     for (let i = 0; i < this.config.numberOfBips; i++) {
       const id = this.generateId();
-      const dna = generateDna(this.config.startingDna);
+      const baseDna = generateDna(this.config.startingDna);
+      const dna = mutateDna(baseDna, this.config.mutationPercentage);
       // Add small random offset so bips don't all stack on same pixel
       const offset = {
         x: startPos.x + (Math.random() - 0.5) * 20,
